@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ख़ुशी की रेसिपी (Khushi's Recipe)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="app-container">
+    
+    <!-- Tabs will be generated here by JS -->
+    <div class="tabs-container" id="tabs-container">
+      <div class="tab" style="background-color: #fff;" onclick="openPage('home')"><i class="fa-solid fa-house"></i></div>
+    </div>
+
+    <!-- Notebook Area -->
+    <div class="notebook">
+      <!-- Binder Rings -->
+      <div class="binder-rings">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+      </div>
+
+      <!-- Pages Area -->
+      <div class="pages-wrapper" id="pages-wrapper">
+        
+        <!-- Home Page -->
+        <div id="page-home" class="page home-page active">
+          <h1 class="home-title">ख़ुशी की रेसिपी</h1>
+          <p class="home-subtitle">भारत के विभिन्न राज्यों का स्वाद</p>
+          <img src="assets/img/misal.png" alt="Indian Food" class="intro-image">
+          <button class="start-btn" onclick="openPage('page-0')">शुरू करें <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+        <!-- Recipe pages will be generated here by JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
